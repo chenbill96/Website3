@@ -25,14 +25,37 @@
 	width: 100px;
 }
 
+.navbar-inverse{
+	border: 0;
+}
+
 #panel1{
-	background-image: url("../media/images/background1.jpg");
+	background-image: url("../media/images/qnc.png");
+	background-color: black;
 	height: 100vh;
 	width: auto;
 	background-position: center;
 }
 
 #panel2{
+	background-image: url("../media/images/3d.jpg");
+	height: 1000px;
+	width: 100%;
+	background-size: auto 100%;
+	background-position: center left;
+	background-repeat: no-repeat;
+}
+
+#panel3{
+	position: 100vh;
+	background-image: url("../media/images/office.jpg");
+	height: 1000px;
+	background-size: auto 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#panel4{
 	min-width: 100%;
 	min-height: 100%;
 	width: auto;
@@ -40,15 +63,25 @@
 	background-color: black;
 }	
 
-#panel3{
-	position: 100vh;
-	background-image: url("media/images/background1.jpg");
-	background-color: red;
-	height: 1000px;
+.container{
+	background-color: #303030;
+	width: 100%;
 }
 
-#panel4{
-	background-image: url("media/images/background1.jpg");
-	background-color: green;
-	height: 1000px;
+.social{
+	list-style: none;
+	padding: 0;
 }
+
+.social li{
+	color: #ef5107;
+}
+
+.social li a{
+	text-decoration: none;
+	color: #ef5107;
+}
+footer h6{
+	color: white;
+}
+
