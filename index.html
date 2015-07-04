@@ -1,18 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-    	<link rel="stylesheet" type="text/css" href="css/style.css">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- CSS/Bootstrap-->
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="js/javascript.js"></script>
+
     </head>
 
     <body>
-        <ul class="navbar">
-            <a href="www.google.com" ><li>Item1</li></a>
-            <a href="www.google.com"><li>Item2</li></a>
-        </ul>
+        <nav id="navbar" class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand">Bill Chen</a>
+                </div>
 
+                <div class="collapse navbar-collapse pull-right">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#panel2">Projects</a></li>
+                        <li><a href="#panel3">Employment</a></li>
+                        <li><a href="#panel4">About</a></li>
+                        <li><a href="#panel5">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-        <div>
+        <div id="panel1">
+            <div id="middleNav">
+                <ul>
+                    <li><a href="#panel2">Projects</a></li>
+                    <li><a href="#panel3">Employment</a></li>
+                    <li><a href="#panel4">About</a></li>
+                    <li><a href="#panel5">Contact</a></li>
+                </ul>
+            </div>
+        </div>
 
+        <video autoplay loop poster="media/images/background1.jpg" id="panel2">
+            <source src="media/videos/backgroundVideos/test.webm"  type="videowebm"></source>
+            <source src="media/videos/backgroundVideos/test.mp4"  type="video/mp4"></source>
+        </video>
+
+        <div id="panel3">
+        </div>
+
+        <div id="panel4">
         </div>
 
     </body> 

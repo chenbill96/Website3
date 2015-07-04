@@ -1,0 +1,54 @@
+#middleNav{
+	position: relative;
+	top: 70vh;
+	width: 400px;
+	height: 40px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#middleNav ul{
+	margin: 0;
+	padding: 0;
+}
+
+#middleNav ul li{
+	list-style: none;
+}
+
+#middleNav ul li a{
+	text-decoration: none;
+	color: white;
+	float: left;
+	display: block;
+	padding: 10px 20px;
+	width: 100px;
+}
+
+#panel1{
+	background-image: url("../media/images/background1.jpg");
+	height: 100vh;
+	width: auto;
+	background-position: center;
+}
+
+#panel2{
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	background-color: black;
+}	
+
+#panel3{
+	position: 100vh;
+	background-image: url("media/images/background1.jpg");
+	background-color: red;
+	height: 1000px;
+}
+
+#panel4{
+	background-image: url("media/images/background1.jpg");
+	background-color: green;
+	height: 1000px;
+}
