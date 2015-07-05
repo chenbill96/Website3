@@ -1,17 +1,38 @@
 /*~~~~~~~~~~~~~~~~global~~~~~~~~~~~~~~~~~~~*/
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans|Roboto+Condensed);
+
 
 
 
 /*~~~~~~~~~~~~~~~~panel1~~~~~~~~~~~~~~~~~*/
+#intro{
+	text-align: center;
+}
 
 #panel1 img{
-	
+	margin-top: 20vh;
 }
+
+#panel1 h1{
+	font-family: 'Josefin Sans', sans-serif;
+	color: white;
+	display: block;
+	font-size: 80px;
+	margin-top: 30px;
+	margin-bottom: 0;
+}
+
+#panel1 h3{
+	color: white;
+	margin: 0;
+	display: block;
+}
+
 
 #middleNav{
 	position: relative;
-	top: 70vh;
-	width: 400px;
+	top: 5vh;
+	width: 600px;
 	height: 40px;
 	margin: 0 auto;
 	text-align: center;
@@ -27,12 +48,13 @@
 }
 
 #middleNav ul li a{
+	font-family: 'Roboto Condensed', sans-serif;
 	text-decoration: none;
 	color: white;
 	float: left;
 	display: block;
 	padding: 10px 20px;
-	width: 100px;
+	width: 150px;
 }
 
 .navbar-inverse{
