@@ -4133,7 +4133,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav-pills > li {
   float: left;
-  width: 33%;
+  width: 33.33333%;
   text-align: center;
 }
 .nav-pills > li > a {
@@ -4141,7 +4141,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-top-right-radius: 4px;
 }
 .nav-pills > li + li {
-  margin-left: 2px;
+ /*margin-left: 2px;*/
 }
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,

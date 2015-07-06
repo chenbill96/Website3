@@ -22,7 +22,7 @@ For showing interest in my code!
     <link rel="stylesheet" type="text/css" href="css/custom.css">
 
     <!-- Scripts-->
-    <script type="text/javascript" src="js/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
 
     <script type="text/javascript" src="js/angular.min.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
@@ -49,15 +49,15 @@ For showing interest in my code!
             <div class="collapse navbar-collapse pull-right">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#page1">Home</a></li>
-                    <li><a href="#page2">Projects</a></li>
-                    <li><a href="#page3">Employment</a></li>
-                    <li><a href="#page4">About</a></li>
-                    <li><a href="#page5">Contact</a></li>
+                    <li><a href="#anchor2">Projects</a></li>
+                    <li><a href="#anchor3">Employment</a></li>
+                    <li><a href="#anchor4">About</a></li>
+                    <li><a href="#anchor5">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-
+    <div id="anchor1"></div>
     <div id="page1">
         <div id="intro">
             <img src="media/images/face.png">
@@ -66,26 +66,33 @@ For showing interest in my code!
         </div>
         <div id="middleNav">
             <ul>
-                <li><a href="#page2">Projects</a></li>
-                <li><a href="#page3">Employment</a></li>
-                <li><a href="#page4">About</a></li>
-                <li><a href="#page5">Contact</a></li>
+                <li><a href="#anchor2">Projects</a></li>
+                <li><a href="#anchor3">Employment</a></li>
+                <li><a href="#anchor4">About</a></li>
+                <li><a href="#anchor5">Contact</a></li>
             </ul>
         </div>
     </div>
 
+    <div id="anchor2"></div>
     <div id="page2" class="container" ng-controller="projectController as projects">
     <div>
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-12">
                 <div class="projectThumbnails">
-                    <a href="#project1" id="thumbnail1"><img src="media/images/Projects/email-logo.jpg"/></a>
-                    <a href="#project2" id="thumbnail2"><img src="media/images/Projects/linkedin.jpg"/></a>
-                    <a href="#project3" id="thumbnail3"><img src="media/images/Projects/linkedin.jpg"/></a>
+                    <div class="col-sm-4">
+                        <a href="#project1" id="thumbnail1"><img src="media/images/Projects/email-logo.jpg"/></a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="#project2" id="thumbnail2"><img src="media/images/Projects/linkedin.jpg"/></a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="#project3" id="thumbnail3"><img src="media/images/Projects/linkedin.jpg"/></a>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-sm-8">
+            <div class="col-sm-12">
                 <div class="projectContent">
                     <div id="project1" class="project active">
                         <ul class="nav nav-pills">
@@ -96,7 +103,7 @@ For showing interest in my code!
                                 <a href="#tab2">Media</a>
                             </li>
                             <li>
-                                <a href="#tab3">TD:LR</a>
+                                <a href="#tab3">TL:DR</a>
                             </li>
                         </ul>
 
@@ -123,7 +130,7 @@ For showing interest in my code!
                         </ul>
 
                         <div class="tabContent">
-                            Testing
+                            
                         </div>
                     </div>
 
@@ -145,6 +152,7 @@ For showing interest in my code!
         </div>
     </div>
 
+    <div id="anchor3"></div>
     <div id="page3" ng-controller="projectController as projects">
 <!--     <div>
             <div class="row" ng-controller="projectItemController as item">
@@ -190,6 +198,8 @@ For showing interest in my code!
             </div>
         </div> -->
     </div>
+
+    <div id="anchor4"></div>
     <div id="page4">
         <video autoplay loop poster="media/images/background1.jpg" id="page4">
             <source src="media/videos/backgroundVideos/aboutbackground.webm"  type="video/webm"></source>

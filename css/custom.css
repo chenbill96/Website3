@@ -5,9 +5,6 @@
 
 
 /*~~~~~~~~~~~~~~~~Page 1~~~~~~~~~~~~~~~~~*/
-#testing{
-	display: none;
-}
 
 #intro{
 	text-align: center;
@@ -74,8 +71,14 @@
 }
 
 /*~~~~~~~~~~~~~~~~Page 2~~~~~~~~~~~~~~~~~*/
+#anchor2{
+	height: 0;
+	top: -50px;
+	display: block;
+	position: relative;
+}
+
 #page2{
-	padding: 20px 20px 20px 0px;
 	background-image: url("../media/images/3d.jpg");
     background-repeat: no-repeat;
     background-width: 100%;
@@ -83,21 +86,20 @@
 }
 
 .projectThumbnails{
-	margin-top: 100px;
+	margin-top: 30px;
 }
 
 .projectThumbnails a img{
 	display: block;
 	width: 30%;
-	margin-bottom: 100px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 30px;
 	border-radius: 10px;
 }
 
 .projectContent{
-	margin-top: 7%;
-	margin-right: 7%; 
+	margin-bottom: 30px;
 	background-color: black;
 	background: rgba(0,0,0,.75);
 	border-radius: 10px;
@@ -123,7 +125,43 @@
 	width: 100%;
 }
 
+
+/*.test{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.test li{
+	float: left;
+  	width: 33.333333%;
+  	text-align: center;
+  	padding-top: 10px;
+  	padding-bottom: 10px;
+}
+
+.test li a{
+	width: 100%;
+	text-decoration: none;
+}
+
+.test > .active{
+	background: #ef5107;
+}
+
+.test > .active > a{
+	color: white;
+}*/
+
 /*~~~~~~~~~~~~~~~~Page 3~~~~~~~~~~~~~~~~~*/
+#anchor3{
+	height: 0;
+	top: -50px;
+	display: block;
+	position: relative;
+}
+
 #page3{
 	position: 100vh;
 	background-image: url("../media/images/office.jpg");
@@ -133,6 +171,13 @@
 	background-repeat: no-repeat;
 }
 /*~~~~~~~~~~~~~~~~Page 4~~~~~~~~~~~~~~~~~*/
+#anchor4{
+	height: 0;
+	top: -50px;
+	display: block;
+	position: relative;
+}
+
 #page4{
 	display: block;
     top: 50%;
