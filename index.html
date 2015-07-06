@@ -1,82 +1,210 @@
+<!-- 
+  _______ _                 _                        
+ |__   __| |               | |                       
+    | |  | |__   __ _ _ __ | | __  _   _  ___  _   _ 
+    | |  | '_ \ / _` | '_ \| |/ / | | | |/ _ \| | | |
+    | |  | | | | (_| | | | |   <  | |_| | (_) | |_| |
+    |_|  |_| |_|\__,_|_| |_|_|\_\  \__, |\___/ \__,_|
+                                    __/ |            
+                                   |___/            
+For showing interest in my code!
+-->
+
+
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- CSS/Bootstrap-->
-        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="css/custom.css">
+<html lang="en" ng-app="buttons">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS/Bootstrap-->
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+    <!-- Scripts-->
+    <script type="text/javascript" src="js/bootstrap/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/javascript.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+</head>
 
 
-        <script src="js/jquery.js"></script>
-        <script src="js/javascript.js"></script>
-
-    </head>
-
-
-    <div id="loader-wrapper">
-        <div id="loader"></div>
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
-    </div>
+<div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+</div>
 
 
-    <body>
-        <nav id="navbar" class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand">Bill Chen</a>
-                </div>
-
-                <div class="collapse navbar-collapse pull-right">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#panel1">Home</a></li>
-                        <li><a href="#panel2">Projects</a></li>
-                        <li><a href="#panel3">Employment</a></li>
-                        <li><a href="#panel4">About</a></li>
-                        <li><a href="#panel5">Contact</a></li>
-                    </ul>
-                </div>
+<body>
+    <nav id="navbar" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand">Bill Chen</a>
             </div>
-        </nav>
 
-        <div id="panel1">
-            <div id="intro">
-                <img src="media/images/face.png">
-                <h1>Bill Chen</h1>
-                <h3>1A Systems Design Engineer</h3>
-            </div>
-            <div id="middleNav">
-                <ul>
-                    <li><a href="#panel2">Projects</a></li>
-                    <li><a href="#panel3">Employment</a></li>
-                    <li><a href="#panel4">About</a></li>
-                    <li><a href="#panel5">Contact</a></li>
+            <div class="collapse navbar-collapse pull-right">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#page1">Home</a></li>
+                    <li><a href="#page2">Projects</a></li>
+                    <li><a href="#page3">Employment</a></li>
+                    <li><a href="#page4">About</a></li>
+                    <li><a href="#page5">Contact</a></li>
                 </ul>
             </div>
         </div>
+    </nav>
 
-        <div id="panel2">
+    <div id="page1">
+        <div id="intro">
+            <img src="media/images/face.png">
+            <h1>Bill Chen</h1>
+            <h3>1A Systems Design Engineer</h3>
         </div>
+        <div id="middleNav">
+            <ul>
+                <li><a href="#page2">Projects</a></li>
+                <li><a href="#page3">Employment</a></li>
+                <li><a href="#page4">About</a></li>
+                <li><a href="#page5">Contact</a></li>
+            </ul>
+        </div>
+    </div>
 
-        <div id="panel3">
+    <div id="page2" class="container" ng-controller="projectController as projects">
+    <div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="projectThumbnails">
+                    <a href="#project1" id="thumbnail1"><img src="media/images/Projects/email-logo.jpg"/></a>
+                    <a href="#project2" id="thumbnail2"><img src="media/images/Projects/linkedin.jpg"/></a>
+                    <a href="#project3" id="thumbnail3"><img src="media/images/Projects/linkedin.jpg"/></a>
+                </div>
+            </div>
+
+            <div class="col-sm-8">
+                <div class="projectContent">
+                    <div id="project1" class="project active">
+                        <ul class="nav nav-pills">
+                            <li class="active">
+                                <a href="#tab1">Description</a>
+                            </li>
+                            <li>
+                                <a href="#tab2">Media</a>
+                            </li>
+                            <li>
+                                <a href="#tab3">TD:LR</a>
+                            </li>
+                        </ul>
+
+                        <div class="tabContent">
+                            <div id="tab1">
+                                <p>Tab1</p>
+                            </div>
+
+                            <div id="tab2">
+                                <p>tab2</p>
+                            </div>
+
+                            <div id="tab3">
+                                <p>tab3</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="project2" class="project">
+                        <ul class="nav nav-pills">
+                            <li class="active" id="singleTab">
+                                <a>Projects</a>
+                            </li>
+                        </ul>
+
+                        <div class="tabContent">
+                            Testing
+                        </div>
+                    </div>
+
+                    <div id="project3" id="singleTab">
+                        <ul class="nav nav-pills">
+                            <li class="active" id="singleTab2">
+                                <a>Projects</a>
+                            </li>
+                        </ul>
+
+                        <div class="tabContent">
+                            Testing
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-        <video autoplay loop poster="media/images/background1.jpg" id="panel4">
+        </div>
+        </div>
+    </div>
+
+    <div id="page3" ng-controller="projectController as projects">
+<!--     <div>
+            <div class="row" ng-controller="projectItemController as item">
+             <div class="col-md-3">
+                <div ng-repeat="project in projects.product">
+                    <a href ng-click="item.selectItem(project.order)">
+                        <img ng-src="{{project.images[0].main}}">
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="col-md-9" ng-controller="projectPanelController as panel">
+                <div ng-repeat="project in projects.product">
+                    <div>
+                        <ul class="nav nav-pills">
+                            <li ng-class=" { active: panel.isSelected(1) }">
+                                <a href ng-click="panel.selectTab(1)">Description</a>
+                            </li>
+                            <li ng-class=" { active: panel.isSelected(2) } ">
+                                <a href ng-click="panel.selectTab(2)">Media</a>
+                            </li>
+                            <li ng-class=" { active: panel.isSelected(3) } ">
+                                <a href ng-click="panel.selectTab(3)">TD:LR</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="panel" ng-show="panel.isSelected(1)">
+                            <h3>{{project.name}}</h3>
+                            <p></p>
+                        </div>
+                        <div class="panel" ng-show="panel.isSelected(2)">
+                            <h3>testing</h3>
+                            <p></p>
+                        </div>
+                        <div class="panel" ng-show="panel.isSelected(3)">
+                            <h3>testinngg</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <div id="page4">
+        <video autoplay loop poster="media/images/background1.jpg" id="page4">
             <source src="media/videos/backgroundVideos/aboutbackground.webm"  type="video/webm"></source>
             <source src="media/videos/backgroundVideos/aboutbackgroundmp4"  type="video/mp4"></source>
         </video>
-        </div>
-    </body> 
+    </div>
+</body> 
 
-    <footer class="container">
-        <div class="row">
-            <div class="col-sm-3">
-                <h6>Copyright © 2015 Bill Chen Inc</h6>
-            </div>
-            <div class="col-sm-3">
-                <h6>Resume</h5>
+<footer class="container">
+    <div class="row">
+        <div class="col-sm-3">
+            <h6>Copyright © 2015 Bill Chen Inc</h6>
+        </div>
+        <div class="col-sm-3">
+            <h6>Resume</h5>
             </div>
             <div class="col-sm-3">
                 <h6>Follow me</h6>
@@ -89,8 +217,11 @@
             </div>
             <div class="col-sm-3">
                 <h6>Coded with <span class="glyphicon glyphicon-heart"></span> by Bill Chen</h6>
-                <h6>Powered by Bootstrap</h6>
+                <h6>Powered by:</h6>
+                <p>Bootstrap</p>
+                <p>JQuery</p>
+                <p>Angular</p>
             </div>
         </div>
     </footer>
-</html>
+    </html>

@@ -4,16 +4,28 @@
 
 
 
-/*~~~~~~~~~~~~~~~~panel1~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~Page 1~~~~~~~~~~~~~~~~~*/
+#testing{
+	display: none;
+}
+
 #intro{
 	text-align: center;
 }
 
-#panel1 img{
+#page1{
+	background-image: url("../media/images/qnc.png");
+	background-color: black;
+	height: 100vh;
+	width: auto;
+	background-position: center;
+}
+
+#page1 img{
 	margin-top: 20vh;
 }
 
-#panel1 h1{
+#page1 h1{
 	font-family: 'Josefin Sans', sans-serif;
 	color: white;
 	display: block;
@@ -22,7 +34,7 @@
 	margin-bottom: 0;
 }
 
-#panel1 h3{
+#page1 h3{
 	color: white;
 	margin: 0;
 	display: block;
@@ -61,37 +73,75 @@
 	border: 0;
 }
 
-#panel1{
-	background-image: url("../media/images/qnc.png");
-	background-color: black;
-	height: 100vh;
-	width: auto;
-	background-position: center;
-}
-
-#panel2{
+/*~~~~~~~~~~~~~~~~Page 2~~~~~~~~~~~~~~~~~*/
+#page2{
+	padding: 20px 20px 20px 0px;
 	background-image: url("../media/images/3d.jpg");
-	height: 1000px;
     background-repeat: no-repeat;
     background-width: 100%;
+    background-position: center center;
 }
 
-#panel3{
+.projectThumbnails{
+	margin-top: 100px;
+}
+
+.projectThumbnails a img{
+	display: block;
+	width: 30%;
+	margin-bottom: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+}
+
+.projectContent{
+	margin-top: 7%;
+	margin-right: 7%; 
+	background-color: black;
+	background: rgba(0,0,0,.75);
+	border-radius: 10px;
+}
+
+.projectContent{
+	color: white;
+}
+
+.nav .active{
+	color: #ef5107;
+}
+
+.tabContent{
+	padding: 20px;
+}
+
+#singleTab{
+	width: 100%;
+}
+
+#singleTab2{
+	width: 100%;
+}
+
+/*~~~~~~~~~~~~~~~~Page 3~~~~~~~~~~~~~~~~~*/
+#page3{
 	position: 100vh;
 	background-image: url("../media/images/office.jpg");
-	height: 1000px;
+	height: 100vh;
 	background-width: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
 }
-
-#panel4{
-	min-width: 100%;
-	min-height: 100%;
-	width: auto;
-	height: 1000px;
-	background-color: black;
+/*~~~~~~~~~~~~~~~~Page 4~~~~~~~~~~~~~~~~~*/
+#page4{
 	display: block;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
 }	
 
 .container{
@@ -112,8 +162,18 @@
 	text-decoration: none;
 	color: #ef5107;
 }
+
+/*~~~~~~~~~~~~~~~~~~~~~~~Footer~~~~~~~~~~~~~~~~~~~~*/
+footer p{
+	color: white;
+	margin: 0;
+	font-size: 12px;
+}
+
 footer h6{
 	color: white;
+	font-size: 14px;
+	margin-bottom: 2px;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~Pre Loader~~~~~~~~~~~~~~~~~~~~*/
@@ -221,3 +281,7 @@ footer h6{
     transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera*/
   }
 }
+
+
+/* ~~~~~ Tests ~~~~ */
+
