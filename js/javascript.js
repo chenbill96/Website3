@@ -17,7 +17,6 @@
 }($));
 
 
-
 $(document).ready(function() {
     $('#loader-wrapper').fadeOut();
     $('#project2').hide();
@@ -25,6 +24,7 @@ $(document).ready(function() {
 
     $('#tab2').hide();
     $('#tab3').hide();
+    $('#tab4').hide();
 
     $('.projectThumbnails a').on('click', function(e)  {
         var currentAttrValue = $(this).attr('href');

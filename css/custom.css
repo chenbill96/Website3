@@ -1,8 +1,10 @@
 /*~~~~~~~~~~~~~~~~global~~~~~~~~~~~~~~~~~~~*/
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans|Roboto+Condensed);
 
-
-
+.col-sm-12{
+	padding-left: 30px;
+	padding-right: 30px;
+}
 
 /*~~~~~~~~~~~~~~~~Page 1~~~~~~~~~~~~~~~~~*/
 
@@ -79,7 +81,7 @@
 }
 
 #page2{
-	background-image: url("../media/images/3d.jpg");
+	background-image: url("../media/images/page2.jpg");
     background-repeat: no-repeat;
     background-width: 100%;
     background-position: center center;
@@ -109,12 +111,33 @@
 	color: white;
 }
 
+#page2 .nav{
+	border-top: 0;
+	border-right: 0;
+	border-left: 0;
+	border-bottom: 1px;
+	border-style: solid;
+	border-color: #ef5107;
+}
+
 .nav .active{
 	color: #ef5107;
 }
 
 .tabContent{
-	padding: 20px;
+	padding: 20px 40px;
+}
+
+#tab1 h3{
+	margin-top: 0;
+}
+
+#tab2 li b{
+	margin-right: 10px;
+}
+
+#tab3 h2 small{
+	margin-left: 10px;
 }
 
 #singleTab{
@@ -125,34 +148,11 @@
 	width: 100%;
 }
 
-
-/*.test{
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	width: 100%;
-}
-
-.test li{
+.projectContent #tab1 img{
 	float: left;
-  	width: 33.333333%;
-  	text-align: center;
-  	padding-top: 10px;
-  	padding-bottom: 10px;
+	margin-right: 40px;
+	display: block;
 }
-
-.test li a{
-	width: 100%;
-	text-decoration: none;
-}
-
-.test > .active{
-	background: #ef5107;
-}
-
-.test > .active > a{
-	color: white;
-}*/
 
 /*~~~~~~~~~~~~~~~~Page 3~~~~~~~~~~~~~~~~~*/
 #anchor3{
@@ -209,6 +209,7 @@
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~Footer~~~~~~~~~~~~~~~~~~~~*/
+
 footer p{
 	color: white;
 	margin: 0;
