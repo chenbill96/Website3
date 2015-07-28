@@ -1,0 +1,14 @@
+.modal-title{
+	color: #ef5107;
+}
+.modal-content{
+	background-color: #202020;
+}
+
+.modal-body > h3 {
+	color: #ef5107;
+}
+
+.modal-footer > button {
+	background-color: #ef5107;
+}

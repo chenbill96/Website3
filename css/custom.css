@@ -1,9 +1,23 @@
 /*~~~~~~~~~~~~~~~~global~~~~~~~~~~~~~~~~~~~*/
+
+/* orange color: #ef5107;
+navbar gray: #303030;
+border color: #f0f0f0;
+
+/*~~~~~~~~~~~~~~~~global~~~~~~~~~~~~~~~~~~~*/
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans|Roboto+Condensed);
 
 .col-sm-12{
 	padding-left: 30px;
 	padding-right: 30px;
+}
+
+body{
+	background-color: #202020;
+}
+
+.buttonOrange{
+	background-color: #ef5107;
 }
 
 /*~~~~~~~~~~~~~~~~Page 1~~~~~~~~~~~~~~~~~*/
@@ -81,7 +95,7 @@
 }
 
 #page2{
-	background-image: url("../media/images/page2.jpg");
+	/*background-image: url("../media/images/page2.jpg");*/
     background-repeat: no-repeat;
     background-width: 100%;
     background-position: center center;
@@ -97,18 +111,17 @@
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 30px;
-	border-radius: 10px;
+	border-radius: 4px;
 }
 
 .projectContent{
 	margin-bottom: 30px;
-	background-color: black;
-	background: rgba(0,0,0,.75);
-	border-radius: 10px;
+	background-color: #F0F0F0;
+	border-radius: 4px;
 }
 
 .projectContent{
-	color: white;
+	color: #303030;
 }
 
 #page2 .nav{
@@ -118,6 +131,14 @@
 	border-bottom: 1px;
 	border-style: solid;
 	border-color: #ef5107;
+}
+
+#page2 > div:nth-child(2) > div > div:nth-child(1){
+	padding-top: 5%;
+}
+
+#page2 > div:nth-child(2) > div > div:nth-child(2){
+	padding: 5% 10%;
 }
 
 .nav .active{
@@ -154,6 +175,12 @@
 	display: block;
 }
 
+.col-sm-4 > a > img{
+	border:2px;
+	border-style: solid;
+	border-color: #C8C8C8;
+}
+
 /*~~~~~~~~~~~~~~~~Page 3~~~~~~~~~~~~~~~~~*/
 #anchor3{
 	height: 0;
@@ -162,14 +189,6 @@
 	position: relative;
 }
 
-#page3{
-	position: 100vh;
-	background-image: url("../media/images/office.jpg");
-	height: 100vh;
-	background-width: 100%;
-	background-position: center;
-	background-repeat: no-repeat;
-}
 /*~~~~~~~~~~~~~~~~Page 4~~~~~~~~~~~~~~~~~*/
 #anchor4{
 	height: 0;
@@ -179,6 +198,15 @@
 }
 
 #page4{
+	position: 100vh;
+	background-image: url("../media/images/arrow.jpg");
+	height: 100vh;
+	background-width: 100%;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+/*#page4{
 	display: block;
     top: 50%;
     left: 50%;
@@ -187,10 +215,9 @@
     width: auto;
     height: auto;
     z-index: -100;
-}	
+}	*/
 
 .container{
-	background-color: #303030;
 	width: 100%;
 }
 

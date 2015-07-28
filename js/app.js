@@ -5,6 +5,10 @@
 		this.product = fancar;
 	});
 
+	app.controller('FancarController', function(){
+		this.product = fancar;
+	});
+
 	// ~~~~~~~~~~~~~~ Tab Content: FANCAR ~~~~~~~~~~~~~~~~~//
 	var fancar = {
 		name: "Fancar 2.0",

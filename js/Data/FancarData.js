@@ -32,12 +32,11 @@ function fancarInspiration($scope){
 function fancarMedia($scope) {
     $scope.events=[
         ////////////////////////////////////////////////////////Archery////////////////////////////////////////////////////////////////
-        {title:"My First Arrow Split",
-        date:"March 30th",
-        description: "Heard an unusual noise after shooting my arrow. Thought it might have hit the table or something. Nope.",
-        quote: "You owe me ten dollars",
-        person: "Sanjey",
-        link: "../images/highlights/arrowsplit.png",
+        {title:"It's Alive!",
+        date:"December 16th, 2014",
+        description: "Bought a second hand longboard via Kijiji, decided to make an aluminum mount for it. This was the result after putting everything together. Note: Still radio controlled.",
+        link: '<iframe width="560" height="315" src="https://www.youtube.com/embed/DpUNV7wdDeQ" frameborder="0" allowfullscreen></iframe>',
+        youtube: "https://www.youtube.com/embed/DpUNV7wdDeQ",
         id:"1"},
         
         ////////////////////////////////////////////////////////Macaroon////////////////////////////////////////////////////////////////

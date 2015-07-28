@@ -53,6 +53,13 @@ $(document).ready(function() {
 
 });
 
+function AppCtrl($scope, $sce) {
+    // ...
+    $scope.setProject = function (id) {
+      $scope.currentProject = $scope.projects[id];
+      $scope.currentProjectUrl = $sce.trustAsResourceUrl($scope.currentProject.url);
+    }
+}
 
 // setTimeout(function(){
 //   $('body').addClass('loaded');
