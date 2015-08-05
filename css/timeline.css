@@ -32,7 +32,7 @@ Main components
   /* this is the vertical line */
   content: '';
   position: absolute;
-  top: 30px;
+  top: 28px;
   left: 18px;
   height: 100%;
   width: 4px;
@@ -46,6 +46,7 @@ Main components
   #cd-timeline::before {
     left: 50%;
     margin-left: -2px;
+    top: 42px;
   }
 }
 
