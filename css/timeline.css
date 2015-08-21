@@ -1,4 +1,7 @@
 
+
+
+
 /* -------------------------------- 
 
 Modules - reusable parts of our design
@@ -83,7 +86,7 @@ Main components
   left: 0;
   width: 40px;
   height: 40px;
-  border: 2px;
+  border: 1px;
   border-radius: 3px;
 /*  border-style: solid;
   border-color: #f0f0f0;
@@ -200,7 +203,15 @@ Main components
 }
 .cd-timeline-content h2 {
   color: #303030;
+  margin: 0;
 }
+
+.cd-timeline-content h4 {
+  color: #303030;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   font-size: 13px;
   font-size: 0.8125rem;
@@ -239,8 +250,12 @@ Main components
 }
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
-    font-size: 20px;
-    font-size: 1.25rem;
+    font-size: 18px;
+    color: #202020;
+  }
+  .cd-timeline-content h4 {
+    font-size: 14px;
+    color: gray;
   }
   .cd-timeline-content p {
     font-size: 16px;
